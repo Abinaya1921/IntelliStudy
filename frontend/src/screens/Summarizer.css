@@ -1,0 +1,78 @@
+/* Summarizer.css */
+
+.summarizer-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease forwards;
+}
+
+.summarizer-textarea {
+  width: 100%;
+  height: 150px;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+.summarizer-textarea:focus {
+  border-color: #4f46e5;
+  outline: none;
+  box-shadow: 0 0 8px #c7d2fe;
+}
+
+.summarize-button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.6rem;
+  background: #4f46e5;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+.summarize-button:hover {
+  background: #4338ca;
+}
+
+.summary-output {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #333;
+  border-left: 4px solid #4f46e5;
+  padding-left: 1rem;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+/* Typing effect for summary text */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.summary-typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #4f46e5;
+  animation: typing 3s steps(40, end) forwards;
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade in and up */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

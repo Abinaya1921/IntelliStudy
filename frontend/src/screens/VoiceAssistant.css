@@ -1,0 +1,104 @@
+/* VoiceAssistant.css */
+
+.voice-assistant-wrapper {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.voice-assistant-wrapper h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mic-button {
+  font-size: 2.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #6366f1; /* Indigo */
+  transition: color 0.3s ease;
+}
+
+.mic-button:hover,
+.mic-button:focus {
+  color: #4f46e5;
+  outline: none;
+}
+
+.language-select {
+  margin-left: 1rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  min-height: 120px;
+  background-color: #fff;
+  color: #222;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 5px #6366f1aa;
+}
+
+button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #4f46e5;
+  outline: none;
+}
+
+button[aria-label="Clear transcript"] {
+  background-color: #ef4444; /* red */
+}
+
+button[aria-label="Clear transcript"]:hover,
+button[aria-label="Clear transcript"]:focus {
+  background-color: #b91c1c;
+}
+
+button + button {
+  margin-left: 1rem;
+}
+
+div[aria-live="polite"] {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #e0e7ff; /* light indigo */
+  color: #3730a3; /* indigo */
+  white-space: pre-wrap;
+  font-size: 1rem;
+  font-weight: 500;
+}
